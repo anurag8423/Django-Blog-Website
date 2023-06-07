@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Blog-Home{% endblock title %}
+{% block homeactive %}active{% endblock homeactive%}
+{% block css %}
+<link rel="stylesheet" href="static/css/home.css">
+{%endblock css %}
+{% block body %}
+<div id="carouselExample" class="carousel slide mt-5">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="static/img/img3.jpeg/"  class="d-block w-100 img-dim" alt="...">
+        </div>
+        <div class="carousel-item active">
+            <img src="static/img/img2.jpeg/"  class="d-block w-100 img-dim"  alt="...">
+        </div>
+        <div class="carousel-item active">
+            <img src="static/img/img1.jpeg/"  class="d-block w-100 img-dim"  alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<h1 class="text-center my-3">Why choose us?</h1>
+<div class="container" >
+    <div class="row mb-5" >
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="static/img/artucle.jpeg/" class="rounded " alt="loading...">
+            </div>
+            <h4 class="text-center">Best coding Articles</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem itaque in ex, unde numquam officiis nobis
+                aut dolore quas, aliquam quis similique perferendis.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="static/img/couese200.jpeg/" class="rounded " alt="loading...">
+            </div>
+            <h4 class="text-center">Free Courses</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem itaque in ex, unde numquam officiis nobis
+                aut dolore
+                quas, aliquam quis similique perferendis.</p>
+        </div>
+        <div class="col-md-4">
+            <div class="text-center">
+                <img src="static/img/service.jpeg/" class="rounded " alt="loading...">
+            </div>
+            <h4 class="text-center">Amazing Services</h4>
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem itaque in ex, unde numquam officiis nobis
+                aut dolore
+                quas, aliquam quis similique perferendis.</p>
+        </div>
+    </div>
+</div>
+{% endblock body %}

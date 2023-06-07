@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% block title %}Blog{% endblock title %}
+{% block blogactive %}active{% endblock blogactive %}
+{% block body %}
+
+<h1 class="text-center mt-5 pt-3">This is blog page</h1>
+{% for blog in blogs %}
+<div class=" container ">
+    <h4>{{blog.title}}</h4>
+    <div>
+        {{blog.shortDesc|safe}}...
+    </div>
+    <div>
+    <a href="/blogpost/{{blog.slug}}/" class=" btn btn-sm btn-outline-primary mt-3" style="text-decoration: none;">Read more...</a>
+    </div>
+    <hr class="my-3 py-0">
+</div>
+{% endfor %}
+<div class="d-flex container justify-content-between mb-5" >
+    {% if prev %}
+    <a href="/blog?page={{prev}}" class="btn btn-primary text-light" style="text-decoration: none;">&laquo; Previous</a>
+    {% else %}
+    <a href="#" class="btn btn-primary text-light disabled" style="text-decoration: none;">&laquo; Previous</a>
+    {% endif %}
+
+    {% if nxt %}
+    <a href="/blog?page={{nxt}}" class="btn btn-primary  text-light float-right" style="text-decoration:none;">Next &raquo;</a>
+    {% else %}
+    <a href="#" class="btn btn-primary  text-light float-right disabled" style="text-decoration:none;">Next &raquo;</a>
+    {% endif %}
+</div><br>
+{% endblock body %}

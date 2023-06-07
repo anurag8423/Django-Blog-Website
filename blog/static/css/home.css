@@ -1,0 +1,14 @@
+@media screen and (max-width:450px) {
+    .img-dim{
+        width:100vw;
+        height:15em;
+    }
+    
+}
+@media screen and (max-width:370px) {
+    .img-dim {
+        width: 100vw;
+        height: 10em;
+    }
+
+}
