@@ -1,8 +1,8 @@
 # Django-Blog-Website
 A Django blog website where you can delve into captivating articles and easily become a contributor. You can contact the administrator through the website to share your own insightful content.
 
-## Install python version>=3.11
-1. clone the repo
+## Set up
+1. Install python version>=3.11 and clone the repo
 2. Create a virtual environment python -m venv venv
 3. Activate the virtual environment source venv/bin/activate for unix based systems, venv\Scripts\activate for windows powershell, call venv\Scripts\activate for windows cmd
 4. Install the requirements pip install -r requirements.txt
